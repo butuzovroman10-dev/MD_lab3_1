@@ -1,0 +1,6 @@
+{
+  "name": "RaceDB Studio",
+  "description": "Интерактивный прототип, дизайн-система и рабочая среда управления базой данных чемпионатов автоспорта: просмотр таблиц, SQL-консоль, импорт/экспорт CSV и JSON, wireframes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

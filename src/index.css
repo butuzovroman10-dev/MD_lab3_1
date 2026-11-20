@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-sans: "Public Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+/* Structural Wireframe Mode (applies clean grayscale blueprint styling when enabled) */
+.wireframe-mode {
+  filter: grayscale(100%) contrast(1.06);
+}
+
+.wireframe-mode [data-surface="panel"],
+.wireframe-mode [data-surface="card"] {
+  border-style: dashed;
+  border-color: #64748b;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.wireframe-mode [data-surface="sidebar"] {
+  border-right-style: dashed;
+  border-right-color: #64748b;
+  background-color: #f8fafc;
+}
+
+/* Custom subtle scrollbars for data tables and SQL console */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
